@@ -6,3 +6,8 @@ The docker containers referenced in this repo point to Docker Containers maintai
 
 # UNMS - Ubiquiti Network Management System - https://unms.com/
   - Docker container maintained by - https://github.com/oznu/docker-unms
+
+# Speedtest - Self hosted HTML5 Speedtest site 
+  - Docker container maintained by - https://github.com/adolfintel/speedtest/tree/docker
+
+No Flash, No Java, No Websocket, No BS. This is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. Great for troubleshooting bandwidth, ping and jitter issues through a reverse proxy with unRaid.

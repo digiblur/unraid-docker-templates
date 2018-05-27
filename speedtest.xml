@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>speedtest</Name>
+  <Repository>adolfintel/speedtest</Repository>
+  <Registry>https://hub.docker.com/r/adolfintel/speedtest/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/adolfintel/speedtest/</Support>
+  <Project/>
+  <Overview>Self-hosted HTML5 Speedtest Docker Container&#xD;
+&#xD;
+Great for troubleshooting bandwidth, ping and jitter issues through a reverse proxy with unRaid.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6580]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/speedtest_icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1527398179</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>Self-hosted HTML5 Speedtest Docker Container&#xD;
+&#xD;
+Great for troubleshooting bandwidth, ping and jitter issues through a reverse proxy with unRaid.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6580</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="80" Default="6580" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">6580</Config>
+</Container>
