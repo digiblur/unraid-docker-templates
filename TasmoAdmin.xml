@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TasmoAdmin</Name>
+  <Repository>raymondmm/tasmoadmin</Repository>
+  <Registry>https://hub.docker.com/r/raymondmm/tasmoadmin/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/raymondmm/tasmoadmin/</Support>
+  <Project/>
+  <Overview>TasmoAdmin (previously SonWEB) is an administrative Website for Home Automation Devices flashed with [Sonoff-Tasmota](https://github.com/arendst/Sonoff-Tasmota). &#xD;
+Video Tutorial: https://www.youtube.com/watch?v=vJUhRyi3-BQ</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9541]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/tasmoadmin_icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1528149716</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>TasmoAdmin (previously SonWEB) is an administrative Website for Home Automation Devices flashed with [Sonoff-Tasmota](https://github.com/arendst/Sonoff-Tasmota). &#xD;
+Video Tutorial: https://www.youtube.com/watch?v=vJUhRyi3-BQ</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9541</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/tasmoadmin/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>tasmoadmin.mydomain</Value>
+      <Name>APACHE_SERVER_NAME</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="data" Target="/data" Default="/mnt/user/appdata/tasmoadmin/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tasmoadmin/</Config>
+  <Config Name="9541" Target="80" Default="9541" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">9541</Config>
+  <Config Name="APACHE_SERVER_NAME" Target="APACHE_SERVER_NAME" Default="tasmoadmin.mydomain" Mode="" Description="Set apache server name to avoid warning at startup.  Default (tasmoadmin.mydomain)" Type="Variable" Display="always" Required="true" Mask="false">tasmoadmin.mydomain</Config>
+</Container>
