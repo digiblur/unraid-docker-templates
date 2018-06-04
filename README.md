@@ -16,3 +16,5 @@ No Flash, No Java, No Websocket, No BS. This is a very lightweight Speedtest imp
 ## TasmoAdmin  
 
 TasmoAdmin (previously SonWEB) is an administrative Website for Home Automation Devices flashed with [Sonoff-Tasmota](https://github.com/arendst/Sonoff-Tasmota). 
+Video Tutorial: https://www.youtube.com/watch?v=vJUhRyi3-BQ
+
