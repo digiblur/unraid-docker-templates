@@ -6,10 +6,10 @@ The docker containers referenced in this repo point to Docker Containers maintai
 
 ## UNMS - Ubiquiti Network Management System 
 https://unms.com/
-  - Docker container maintained by - https://github.com/oznu/docker-unms
+  - Docker container maintained at - https://github.com/oznu/docker-unms
 
 ## Speedtest - Self hosted HTML5 Speedtest site 
-  - Docker container maintained by - https://github.com/adolfintel/speedtest/tree/docker
+  - Docker container maintained at - https://github.com/adolfintel/speedtest/tree/docker
 
 No Flash, No Java, No Websocket, No BS. This is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. Great for troubleshooting bandwidth, ping and jitter issues through a reverse proxy with unRaid.
 
@@ -18,3 +18,4 @@ No Flash, No Java, No Websocket, No BS. This is a very lightweight Speedtest imp
 TasmoAdmin (previously SonWEB) is an administrative Website for Home Automation Devices flashed with [Sonoff-Tasmota](https://github.com/arendst/Sonoff-Tasmota). 
 Video Tutorial: https://www.youtube.com/watch?v=vJUhRyi3-BQ
 
+  - Docker container maintained at - https://github.com/reloxx13/TasmoAdmin
