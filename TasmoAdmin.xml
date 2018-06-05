@@ -6,11 +6,11 @@
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/raymondmm/tasmoadmin/</Support>
+  <Support>https://lime-technology.com/forums/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project/>
   <Overview>TasmoAdmin (previously SonWEB) is an administrative Website for Home Automation Devices flashed with [Sonoff-Tasmota](https://github.com/arendst/Sonoff-Tasmota). &#xD;
 Video Tutorial: https://www.youtube.com/watch?v=vJUhRyi3-BQ</Overview>
-  <Category/>
+  <Category>HomeAutomation: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:9541]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/tasmoadmin_icon.png</Icon>
