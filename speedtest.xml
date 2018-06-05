@@ -6,12 +6,12 @@
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/adolfintel/speedtest/</Support>
+  <Support>https://lime-technology.com/forums/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project/>
   <Overview>Self-hosted HTML5 Speedtest Docker Container&#xD;
 &#xD;
 Great for troubleshooting bandwidth, ping and jitter issues through a reverse proxy with unRaid.</Overview>
-  <Category/>
+  <Category>Network:Management Tools:</Category>
   <WebUI>http://[IP]:[PORT:6580]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/speedtest_icon.png</Icon>
