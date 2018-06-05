@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/oznu/unms/</Support>
+  <Support>https://lime-technology.com/forums/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project/>
   <Overview>This is an all-in-one Alpine Linux based Docker image for running the Ubiquiti Network Management System. This image contains all the components required to run UNMS in a single container and uses the s6-overlay for process management.&#xD;
 &#xD;
@@ -14,7 +14,7 @@ The container can be accessed via HTTP with port 6080 or HTTPS 6443.  &#xD;
 &#xD;
 UNMS Setup:&#xD;
 Access the container and walk through the initial setup wizard of adding the username/passwords and devices to be monitored.</Overview>
-  <Category/>
+  <Category>Network:Management Tools:</Category>
   <WebUI>https://[IP]:[PORT:6443]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/unms_icon.png</Icon>
