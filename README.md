@@ -20,10 +20,10 @@ Video Tutorial: https://www.youtube.com/watch?v=vJUhRyi3-BQ
 
   - Docker container maintained at - https://github.com/reloxx13/TasmoAdmin
 
-## HA-Dockermon - HomeAssistant Docker Monitor
+## HA-Dockermon - HomeAssistant Docker Container Monitor
 
 A simple Node service which checks the status of a Docker Container and returns a RESTful response. It can also be used to issue start, stop, and restart commands. The primary purpose of this service is to interface with Home Assistant. Build automations/notifications for all of your docker containers and much more!
 
   - Docker container maintained at - https://github.com/philhawthorne/ha-dockermon
-  - Custom HomeAssistant component to automatically add all the docker "switches" to HA - https://github.com/HalfDecent/HA-Custom_components/tree/master/hadockermon
+  - Custom HomeAssistant component to automatically add all the container "switches" to HA - https://github.com/HalfDecent/HA-Custom_components/tree/master/hadockermon
 
