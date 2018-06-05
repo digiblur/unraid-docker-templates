@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ha-dockermon</Name>
+  <Repository>philhawthorne/ha-dockermon</Repository>
+  <Registry>https://hub.docker.com/r/philhawthorne/ha-dockermon/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://lime-technology.com/forums/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project/>
+  <Overview>A NodeJS RESTful API which can be used with Home Assistant to report the state of Docker Containers [br][br]Custom Component to automatically add all your docker switches to home assistant.  https://github.com/HalfDecent/HA-Custom_components/tree/master/hadockermon [br][br]Additional info including the API can be found here:[br][br]&#xD;
+https://github.com/philhawthorne/ha-dockermon</Overview>
+  <Category>HomeAutomation: Network:Management</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/ha-dockermon_icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1528170332</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>A NodeJS RESTful API which can be used with Home Assistant to report the state of Docker Containers [br][br]Custom Component to automatically add all your docker switches to home assistant.  https://github.com/HalfDecent/HA-Custom_components/tree/master/hadockermon [br][br]Additional info including the API can be found here:[br][br]&#xD;
+https://github.com/philhawthorne/ha-dockermon</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8126</HostPort>
+        <ContainerPort>8126</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ha-dockermon/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="dockersock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Container Path: /var/run/docker.sock" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="configpath" Target="/config" Default="/mnt/user/appdata/ha-dockermon/" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ha-dockermon/</Config>
+  <Config Name="API port" Target="8126" Default="8126" Mode="tcp" Description="Container Port: 8126" Type="Port" Display="always" Required="true" Mask="false">8126</Config>
+</Container>
