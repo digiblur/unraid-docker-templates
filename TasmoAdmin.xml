@@ -40,15 +40,8 @@ Video Tutorial: https://www.youtube.com/watch?v=vJUhRyi3-BQ</Description>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment>
-    <Variable>
-      <Value>tasmoadmin.mydomain</Value>
-      <Name>APACHE_SERVER_NAME</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
+  <Environment/>
   <Labels/>
   <Config Name="data" Target="/data" Default="/mnt/user/appdata/tasmoadmin/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tasmoadmin/</Config>
   <Config Name="9541" Target="80" Default="9541" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">9541</Config>
-  <Config Name="APACHE_SERVER_NAME" Target="APACHE_SERVER_NAME" Default="tasmoadmin.mydomain" Mode="" Description="Set apache server name to avoid warning at startup.  Default (tasmoadmin.mydomain)" Type="Variable" Display="always" Required="true" Mask="false">tasmoadmin.mydomain</Config>
 </Container>
