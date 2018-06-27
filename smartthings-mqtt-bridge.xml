@@ -13,7 +13,7 @@
 This project was spawned by the desire to control SmartThings from within Home Assistant. Since Home Assistant already supports MQTT, we chose to go and build a bridge between SmartThings and MQTT.&#xD;
 &#xD;
 Setup info available at: https://github.com/stjohnjohnson/smartthings-mqtt-bridge</Overview>
-  <Category/>
+  <Category>HomeAutomation: Network:Management</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/smartthings-mqtt-bridge_icon.png</Icon>
