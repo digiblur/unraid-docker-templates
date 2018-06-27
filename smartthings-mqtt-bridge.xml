@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>smartthings-mqtt-bridge</Name>
+  <Repository>stjohnjohnson/smartthings-mqtt-bridge</Repository>
+  <Registry>https://hub.docker.com/r/stjohnjohnson/smartthings-mqtt-bridge/~/dockerfile/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/stjohnjohnson/smartthings-mqtt-bridge/</Support>
+  <Project/>
+  <Overview>A bridge between SmartThings and MQTT (there is NO webconsole!)&#xD;
+&#xD;
+This project was spawned by the desire to control SmartThings from within Home Assistant. Since Home Assistant already supports MQTT, we chose to go and build a bridge between SmartThings and MQTT.&#xD;
+&#xD;
+Setup info available at: https://github.com/stjohnjohnson/smartthings-mqtt-bridge</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/smartthings-mqtt-bridge_icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1530060995</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A bridge between SmartThings and MQTT (there is NO webconsole!)&#xD;
+&#xD;
+This project was spawned by the desire to control SmartThings from within Home Assistant. Since Home Assistant already supports MQTT, we chose to go and build a bridge between SmartThings and MQTT.&#xD;
+&#xD;
+Setup info available at: https://github.com/stjohnjohnson/smartthings-mqtt-bridge</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/smartthings-mqtt-bridge</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="BridgePort" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="BridgeDataPath" Target="/config" Default="/mnt/user/appdata/smartthings-mqtt-bridge" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/smartthings-mqtt-bridge</Config>
+</Container>

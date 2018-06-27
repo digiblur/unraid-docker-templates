@@ -33,3 +33,10 @@ A simple Node service which checks the status of a Docker Container and returns 
   - Docker container maintained at - https://github.com/philhawthorne/ha-dockermon
   - Custom HomeAssistant component to automatically add all the container "switches" to HA - https://github.com/HalfDecent/HA-Custom_components/tree/master/hadockermon
 
+## SmartThings MQTT Bridge
+![alt text](https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/smartthings-mqtt-bridge_icon.png?raw=true "SmartThings MQTT Bridge")
+
+System to share and control SmartThings device states in MQTT.  Setup is geared towards HomeAssistant but you can use any system that supports MQTT
+
+  - Docker container maintained at - https://github.com/stjohnjohnson/smartthings-mqtt-bridge
+  - Additional setup walk-through - https://community.home-assistant.io/t/anyone-integrated-smartthings-into-hassio-yet/25324
