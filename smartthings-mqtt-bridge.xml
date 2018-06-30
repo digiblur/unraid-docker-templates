@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/stjohnjohnson/smartthings-mqtt-bridge/</Support>
+  <Support>https://lime-technology.com/forums/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project/>
   <Overview>A bridge between SmartThings and MQTT (there is NO webconsole!)&#xD;
 &#xD;
