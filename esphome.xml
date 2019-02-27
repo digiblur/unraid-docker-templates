@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ESPHome</Name>
+  <Repository>esphome/esphome</Repository>
+  <Registry>https://hub.docker.com/r/esphome/esphome<Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project/>
+  <Overview>Utilizing the official ESPHome Container. ESPHome is the perfect solution for creating custom firmwares for your ESP8266/ESP32 boards. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.</Overview>
+  <Category>HomeAutomation: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:6052]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/esphome.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1550384878</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>ESPHome is the perfect solution for creating custom firmwares for your ESP8266/ESP32 boards. No arduino required as ESPHome does it all!</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6123</HostPort>
+        <ContainerPort>6123</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6052</HostPort>
+        <ContainerPort>6052</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/esphome</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Config Folder" Target="/config" Default="/mnt/user/appdata/esphome" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/esphome</Config>
+  <Config Name="Communication" Target="6123" Default="6123" Mode="tcp" Description="Communication Port" Type="Port" Display="advanced" Required="false" Mask="false">6123</Config>
+  <Config Name="WebUI" Target="6052" Default="6052" Mode="tcp" Description="WebUI Port" Type="Port" Display="advanced" Required="false" Mask="false">6052</Config>
+</Container>
