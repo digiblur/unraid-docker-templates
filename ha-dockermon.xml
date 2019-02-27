@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
-  <Support>https://lime-technology.com/forums/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project/>
   <Overview>A NodeJS RESTful API which can be used with Home Assistant to report the state of Docker Containers [br][br]Custom Component to automatically add all your docker switches to home assistant.  https://gitlab.com/custom_components/hadockermon [br][br]Additional info including the API can be found here:[br][br]&#xD;
 https://github.com/philhawthorne/ha-dockermon</Overview>
