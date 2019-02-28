@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>ESPHome</Name>
   <Repository>esphome/esphome</Repository>
-  <Registry>https://hub.docker.com/r/esphome/esphome<Registry/>
+  <Registry>https://hub.docker.com/r/esphome/esphome</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
