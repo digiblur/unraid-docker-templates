@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>hassio_supervisor</Name>
+  <Repository>homeassistant/amd64-hassio-supervisor</Repository>
+  <Registry>https://hub.docker.com/r/homeassistant/amd64-hassio-supervisor</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project/>
+  <Overview>Testing Purposes!  The WebUI will be provided by the homeassistant docker container on port 8123 of this server.&#xD;
+&#xD;
+Hass.io Supervisor Docker Container - Hass.io is a Docker-based system for managing your Home Assistant installation and related applications. The system is controlled via Home Assistant which communicates with the Supervisor. The Supervisor provides an API to manage the installation. This includes changing network settings or installing and updating software.&#xD;
+</Overview>
+  <Category>HomeAutomation: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8123]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/ha_round2.png</Icon>
+  <ExtraParams>--security-opt apparmor:unconfined --security-opt seccomp=unconfined</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1558142310</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>The WebUI will be provided by the homeassistant docker container on port 8123 of this server.&#xD;
+&#xD;
+Hass.io Supervisor Docker Container - Hass.io is a Docker-based system for managing your Home Assistant installation and related applications. The system is controlled via Home Assistant which communicates with the Supervisor. The Supervisor provides an API to manage the installation. This includes changing network settings or installing and updating software.&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/hassio/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/var/run/dbus</HostDir>
+      <ContainerDir>/var/run/dbus</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>/mnt/user/appdata/hassio/</Value>
+      <Name>SUPERVISOR_SHARE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>hassio_supervisor</Value>
+      <Name>SUPERVISOR_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>homeassistant/intel-nuc-homeassistant</Value>
+      <Name>HOMEASSISTANT_REPOSITORY</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="hassio_data" Target="/data" Default="/mnt/user/appdata/hassio/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/hassio/</Config>
+  <Config Name="SUPERVISOR_SHARE" Target="SUPERVISOR_SHARE" Default="/mnt/user/appdata/hassio/" Mode="" Description="Container Variable: SUPERVISOR_SHARE" Type="Variable" Display="always" Required="true" Mask="false">/mnt/user/appdata/hassio/</Config>
+  <Config Name="dockersock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Container Path: /var/run/docker.sock" Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="SUPERVISOR_NAME" Target="SUPERVISOR_NAME" Default="hassio_supervisor" Mode="" Description="Container Variable: SUPERVISOR_NAME" Type="Variable" Display="advanced" Required="true" Mask="false">hassio_supervisor</Config>
+  <Config Name="HOMEASSISTANT_REPOSITORY" Target="HOMEASSISTANT_REPOSITORY" Default="homeassistant/intel-nuc-homeassistant" Mode="" Description="Container Variable: HOMEASSISTANT_REPOSITORY" Type="Variable" Display="advanced" Required="true" Mask="false">homeassistant/intel-nuc-homeassistant</Config>
+  <Config Name="dbus" Target="/var/run/dbus" Default="/var/run/dbus" Mode="rw" Description="Container Path: /var/run/dbus" Type="Path" Display="advanced" Required="true" Mask="false">/var/run/dbus</Config>
+</Container>
