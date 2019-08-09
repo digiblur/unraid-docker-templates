@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>unms</Name>
-  <Repository>oznu/unms</Repository>
-  <Registry>https://hub.docker.com/r/oznu/unms/</Registry>
+  <Repository>nico640/docker-unms</Repository>
+  <Registry>https://hub.docker.com/r/nico640/docker-unms</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
@@ -25,7 +25,7 @@ Access the container and walk through the initial setup wizard of adding the use
   <DonateLink/>
   <DonateImg/>
   <MinVer/>
-  <Description>This is an all-in-one Alpine Linux based Docker image for running the Ubiquiti Network Management System. This image contains all the components required to run UNMS in a single container and uses the s6-overlay for process management.&#xD;
+  <Description>This is an all-in-one Docker image for running the Ubiquiti Network Management System.. This image contains all the components required to run UNMS in a single container and uses the s6-overlay for process management.&#xD;
 &#xD;
 The container can be accessed via HTTP with port 6080 or HTTPS 6443.  &#xD;
 &#xD;
