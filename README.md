@@ -8,7 +8,7 @@ The docker containers referenced in this repo point to Docker Containers maintai
 ![alt text](https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/unms_icon.png?raw=true "HA-Dockermon")
 
 https://unms.com/
-  - Docker container maintained at - https://github.com/oznu/docker-unms
+  - Docker container maintained at - https://github.com/Nico640/docker-unms
 
 ## Speedtest - Self hosted HTML5 Speedtest site 
 ![alt text](https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/speedtest_icon.png?raw=true "Speedtest")
