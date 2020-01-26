@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tasmobackup</Name>
+  <Repository>danmed/tasmobackupv1</Repository>
+  <Registry>https://hub.docker.com/r/danmed/tasmobackup/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/danmed/tasmobackup/</Support>
+  <Project/>
+  <Overview>Tasmota backup - TasmoBackup - Backup all your tasmota devices in one place.  Add/scan for your Tasmota devices.  Use the backupall.php page to schedule automated backups of all devices!</Overview>
+  <Category>HomeAutomation: Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:8259]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/danmed/TasmoBackupV1/master/TasmoBackup.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1580076827</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Tasmota backup - TasmoBackup - Backup all your tasmota devices in one place.  Add/scan for your Tasmota devices.  Use the backupall.php page to schedule automated backups of all devices!</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8259</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/tasmobackupv1</HostDir>
+      <ContainerDir>/var/www/html/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>sqlite</Value>
+      <Name>DBTYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>data/tasmobackup</Value>
+      <Name>DBNAME</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">8259</Config>
+  <Config Name="Host Path 1" Target="/var/www/html/data" Default="" Mode="rw" Description="Container Path: /var/www/html/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tasmobackupv1</Config>
+  <Config Name="DBTYPE" Target="DBTYPE" Default="" Mode="" Description="Container Variable: DBTYPE" Type="Variable" Display="always" Required="false" Mask="false">sqlite</Config>
+  <Config Name="DBNAME" Target="DBNAME" Default="" Mode="" Description="Container Variable: DBNAME" Type="Variable" Display="always" Required="false" Mask="false">data/tasmobackup</Config>
+</Container>
