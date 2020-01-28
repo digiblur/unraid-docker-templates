@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tasui</Name>
+  <Repository>iotreboot/tasui:latest</Repository>
+  <Registry>https://hub.docker.com/r/iotreboot/tasui</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/iotreboot/tasui</Support>
+  <Project/>
+  <Overview>TasUI is a zero-install device management interface web application for all your Tasmota devices. It will discover your deployed devices and allow you to set up and configure every device from a single dashboard. This initial version includes multiple views (Control, Health, Firmware, Wi-Fi, &amp;amp; MQTT) to allow you to quickly assess the state of your devices. There is also a detailed view (e.g., SetOptions, Status, etc.) available.</Overview>
+  <Category>HomeAutomation: Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:8383]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/digiblur/unraid-docker-templates/raw/master/images/tasui.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1580174413</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>TasUI is a zero-install device management interface web application for all your Tasmota devices. It will discover your deployed devices and allow you to set up and configure every device from a single dashboard. This initial version includes multiple views (Control, Health, Firmware, Wi-Fi, &amp;amp; MQTT) to allow you to quickly assess the state of your devices. There is also a detailed view (e.g., SetOptions, Status, etc.) available.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8383</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="GUI" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8383</Config>
+</Container>

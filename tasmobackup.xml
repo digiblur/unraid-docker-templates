@@ -51,8 +51,8 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">8259</Config>
-  <Config Name="Host Path 1" Target="/var/www/html/data" Default="" Mode="rw" Description="Container Path: /var/www/html/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tasmobackupv1</Config>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8259</Config>
+  <Config Name="Host Path 1" Target="/var/www/html/data" Default="" Mode="rw" Description="Container Path: /var/www/html/data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tasmobackupv1</Config>
   <Config Name="DBTYPE" Target="DBTYPE" Default="" Mode="" Description="Container Variable: DBTYPE" Type="Variable" Display="always" Required="false" Mask="false">sqlite</Config>
   <Config Name="DBNAME" Target="DBNAME" Default="" Mode="" Description="Container Variable: DBNAME" Type="Variable" Display="always" Required="false" Mask="false">data/tasmobackup</Config>
 </Container>
