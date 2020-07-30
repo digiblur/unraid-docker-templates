@@ -9,7 +9,7 @@
   <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project/>
-  <Overview>Testing Purposes!  The WebUI will be provided by the homeassistant docker container on port 8123 of this server.&#xD;
+  <Overview>Testing Purposes Only - This install method is NOT a supported method of HA Install!  The WebUI will be provided by the homeassistant docker container on port 8123 of this server.&#xD;
 &#xD;
 Hass.io Supervisor Docker Container - Hass.io is a Docker-based system for managing your Home Assistant installation and related applications. The system is controlled via Home Assistant which communicates with the Supervisor. The Supervisor provides an API to manage the installation. This includes changing network settings or installing and updating software.&#xD;
 </Overview>
