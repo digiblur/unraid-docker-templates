@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>wyzesense2mqtt</Name>
+  <Repository>raetha/wyzesense2mqtt</Repository>
+  <Registry>https://hub.docker.com/r/raetha/wyzesense2mqtt/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/raetha/wyzesense2mqtt</Support>
+  <Project/>
+  <Overview>Configurable WyzeSense to MQTT Gateway for Home Assistant.  Refer to the WyzeSense2MQTT docs for configuration.  Sensors.yaml is also required to have at least one sensor and will not be made automatically.  Change your hidraw port to pass into the container as necessary.</Overview>
+  <Category>HomeAutomation: Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/digiblur/unraid-docker-templates/raw/master/images/wyzesense2mqtt.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1607033925</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Configurable WyzeSense to MQTT Gateway for Home Assistant.  Refer to the WyzeSense2MQTT docs for configuration.  Sensors.yaml is also required to have at least one sensor and will not be made automatically.  Change your hidraw port to pass into the container as necessary.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/wyzesense2mqtt/config/</HostDir>
+      <ContainerDir>/wyzesense2mqtt/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/wyzesense2mqtt/logs/</HostDir>
+      <ContainerDir>/wyzesense2mqtt/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="ConfigPath" Target="/wyzesense2mqtt/config" Default="/mnt/user/appdata/wyzesense2mqtt/config/" Mode="rw" Description="Container Path: /wyzesense2mqtt/config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wyzesense2mqtt/config</Config>
+  <Config Name="LogsPath" Target="/mnt/user/appdata/wyzesense2mqtt/logs/" Default="/mnt/user/appdata/wyzesense2mqtt/logs/" Mode="rw" Description="Container Path: /wyzesense2mqtt/logs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wyzesense2mqtt/logs/</Config>
+  <Config Name="WyzeSensePort" Target="/dev/hidraw0" Default="/dev/hidraw0" Mode="" Description="Container Device" Type="Device" Display="always" Required="true" Mask="false">/dev/hidraw0</Config>
+</Container>
