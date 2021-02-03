@@ -52,6 +52,6 @@ The Neolink project is not affiliated with Reolink in any way; everything it doe
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="neolink_config" Target="/etc/neolink.toml" Default="/mnt/user/appdata/neolink" Mode="rw" Description="See the Neolink Github for camera setup examples required in this file." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/neolink/config.toml</Config>
+  <Config Name="neolink_config" Target="/etc/neolink.toml" Default="/mnt/user/appdata/neolink/config.toml" Mode="rw" Description="See the Neolink Github for camera setup examples required in this file." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/neolink/config.toml</Config>
   <Config Name="neolink" Target="8554" Default="8554" Mode="tcp" Description="Container Port: 8554" Type="Port" Display="always" Required="true" Mask="false">8554</Config>
 </Container>
