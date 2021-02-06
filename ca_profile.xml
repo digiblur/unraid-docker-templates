@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maintainer>
-  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/digiblur/images/digiblur.png</Icon>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/digiblur.png</Icon>
   <Profile>
     Just some Random dude making docker container templates to save you a bunch of clicks and research.
   </Profile>
