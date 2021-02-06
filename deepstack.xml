@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>deepstack</Name>
+  <Repository>deepquestai/deepstack</Repository>
+  <Registry>https://hub.docker.com/r/deepquestai/deepstack/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/deepquestai/deepstack/</Support>
+  <Project/>
+  <Overview>The AI Server empowering every developer to easily integrate AI features Into their applications.   </Overview>
+  <Category>HomeAutomation: Tools: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/deepstacklogo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1612585297</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>The AI Server empowering every developer to easily integrate AI features Into their applications.   </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/deepstack</HostDir>
+      <ContainerDir>/datastore</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Medium</Value>
+      <Name>MODE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>True</Value>
+      <Name>VISION-DETECTION</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="datastore" Target="/datastore" Default="/mnt/user/appdata/deepstack" Mode="rw" Description="datastore container path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/deepstack</Config>
+  <Config Name="UI/API Port" Target="5000" Default="5000" Mode="tcp" Description="UI/API Port" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
+  <Config Name="Mode" Target="MODE" Default="Medium" Mode="" Description="CPU Mode" Type="Variable" Display="always" Required="true" Mask="false">Medium</Config>
+  <Config Name="Object Detection" Target="VISION-DETECTION" Default="True" Mode="" Description="Object Detection" Type="Variable" Display="always" Required="true" Mask="false">True</Config>
+</Container>
