@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/digiblur/images/digiblur.png</Icon>
+  <Profile>
+    Just some Random dude making docker container templates to save you a bunch of clicks and research.
+  </Profile>
+  <DonateLink>https://www.paypal.me/digiblurDIY</DonateLink>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <WebPage>https://www.digiblur.com</WebPage>
+  <Facebook>https://facebook.digiblur.com<Facebook>
+  <Discord>https://discord.digiblur.com<Discord>
+  <Twitter>https://twitter.com/digiblur<Twitter>  
+</Maintainer>
