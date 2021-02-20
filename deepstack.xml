@@ -4,22 +4,15 @@
   <Repository>deepquestai/deepstack</Repository>
   <Registry>https://hub.docker.com/r/deepquestai/deepstack/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/deepquestai/deepstack/</Support>
-  <Project/>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project>https://hub.docker.com/r/deepquestai/deepstack/</Project>
   <Overview>The AI Server empowering every developer to easily integrate AI features Into their applications.   </Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/deepstack.xml<TemplateURL/>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/deepstacklogo.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1612585297</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
   <Description>The AI Server empowering every developer to easily integrate AI features Into their applications.   </Description>
   <Networking>
     <Mode>bridge</Mode>
