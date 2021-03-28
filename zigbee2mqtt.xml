@@ -12,7 +12,7 @@
   <Overview>Zigbee to MQTT bridge allows you to use your Zigbee devices without the vendors bridge or gateway.  This template has the port 9442 forwarded for the front end and does not require a USB passthrough to accomodate IP based bridges.    </Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/zigbee2mqtt.png</Icon>  
-  <Config Name="appdata" Target="/app/data" Default="" Mode="rw" Description="Container Path: /app/data" Type="Path" Display="advanced" Required="true" Mask="false"/>
+  <Config Name="appdata" Target="/app/data" Default="/mnt/user/appdata/zigbee2mqtt" Mode="rw" Description="Container Path: /app/data" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Zigbee module" Target="" Default="SERIAL_PATH_TO_ZIGBEE_MODULE" Mode="" Description="Path to zigbee module, use dev/serial/by-id if possible" Type="Device" Display="always" Required="false" Mask="false"/>
   <Config Name="WebUI" Target="9442" Default="9442" Mode="tcp" Description="Container Port: 9442" Type="Port" Display="always" Required="true" Mask="false"/>
 </Container>
