@@ -11,7 +11,7 @@
   <Project>https://github.com/koenkk/zigbee2mqtt</Project>
   <Overview>Zigbee to MQTT bridge allows you to use your Zigbee devices without the vendors bridge or gateway.  This template has the port 9442 forwarded for the front end and does not require a USB passthrough to accomodate IP based bridges.    &#xD;
 &#xD;
-All users MUST edit the configuration.yaml file in the appdata zigbee2mqtt folder to specify the serial port (or tcp port) for the zigbee adapter.  Attempt to start the container at least once and the yaml will be created for you.  If you are using an IP based Zigbee bridge, remove the USB passthrough on the container configuration below.  How to determine the Zigbee adapter USB ID: https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html#1-determine-location-of-the-adapter-and-checking-user-permissions&#xD;
+All users MUST edit the configuration.yaml file in the appdata zigbee2mqtt folder to specify the serial port (or tcp port) for the zigbee adapter.  Attempt to start the container at least once and the yaml will be created for you.  If you are using a USB Zigbee adapter, add the device passthrough below on the container configuration.  How to determine the Zigbee adapter USB ID: https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html#1-determine-location-of-the-adapter-and-checking-user-permissions&#xD;
 &#xD;
 To enable the frontend GUI,  edit the configuration.yaml in the appdata zigbee2mqtt folder and add the following:&#xD;
 &#xD;
@@ -26,6 +26,5 @@ To enabled the dev branch to be used.  Change the repository value to koenkk/zig
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/zigbee2mqtt.png</Icon>  
   <Config Name="appdata" Target="/app/data" Default="/mnt/user/appdata/zigbee2mqtt" Mode="rw" Description="Container Path: /app/data" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Zigbee module" Target="" Default="SERIAL_PATH_TO_ZIGBEE_MODULE" Mode="" Description="Path to zigbee module, use dev/serial/by-id if possible" Type="Device" Display="always" Required="false" Mask="false"/>
   <Config Name="WebUI" Target="9442" Default="9442" Mode="tcp" Description="Container Port: 9442" Type="Port" Display="always" Required="true" Mask="false"/>
 </Container>
