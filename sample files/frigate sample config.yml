@@ -1,0 +1,90 @@
+#frigate sample config.yml
+mqtt:
+  # Required: host name
+  host: 192.168.x.x
+  # Optional: port (default: shown below)
+  port: 1883
+  # Optional: topic prefix (default: shown below)
+  # WARNING: must be unique if you are running multiple instances
+  topic_prefix: frigate
+  # Optional: client id (default: shown below)
+  # WARNING: must be unique if you are running multiple instances
+  client_id: frigate
+  # Optional: user
+  user: mqtt user here
+  # Optional: 
+  # NOTE: Environment variables that begin with 'FRIGATE_' may be referenced in {}.
+  #       eg. password: '{FRIGATE_MQTT_PASSWORD}'
+  password: mqtt pass here
+  # Optional: interval in seconds for publishing stats (default: shown below)
+  stats_interval: 60
+ 
+cameras:
+  frontyard:
+    ffmpeg:
+      inputs:
+        - path: rtsp://viewer:MYSouperSekretPass@10.69.52.47:554/cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+          roles:
+            - detect
+        - path: rtsp://viewer:MYSouperSekretPass@10.69.52.47:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+          roles:
+#            - detect
+            - clips
+#    width: 3840
+#    height: 2160
+    width: 704
+    height: 480
+    fps: 10
+    rtmp:
+      # Required: Enable the live stream (default: True)
+      enabled: false
+    clips:
+      # Required: enables clips for the camera (default: shown below)
+      # This value can be set via MQTT and will be updated in startup based on retained value
+      enabled: True
+      # Optional: Number of seconds before the event to include in the clips (default: shown below)
+      pre_capture: 5
+      # Optional: Number of seconds after the event to include in the clips (default: shown below)
+      post_capture: 5
+      # Optional: Objects to save clips for. (default: all tracked objects)
+      objects:
+        - person
+        - car
+      # Optional: Camera override for retention settings (default: global values)
+      retain:
+        # Required: Default retention days (default: shown below)
+        default: 10
+        # Optional: Per object retention days
+        objects:
+          person: 15
+    # Optional: Configuration for the jpg snapshots written to the clips directory for each event
+    snapshots:
+      # Optional: Enable writing jpg snapshot to /media/frigate/clips (default: shown below)
+      # This value can be set via MQTT and will be updated in startup based on retained value
+      enabled: true
+      # Optional: print a timestamp on the snapshots (default: shown below)
+      timestamp: true
+      # Optional: draw bounding box on the snapshots (default: shown below)
+      bounding_box: true
+      # Optional: crop the snapshot (default: shown below)
+      crop: False
+#      # Optional: height to resize the snapshot to (default: original size)
+#      height: 175
+      # Optional: Camera override for retention settings (default: global values)
+      retain:
+        # Required: Default retention days (default: shown below)
+        default: 10
+        # Optional: Per object retention days
+        objects:
+          person: 15
+    objects:
+      track:
+        - person
+        - cat
+        - dog
+#        - car    
+
+detectors:
+  coral_pci:
+    type: edgetpu
+    device: pci
