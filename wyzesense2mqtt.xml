@@ -7,9 +7,9 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/raetha/wyzesense2mqtt</Support>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project/>
-  <Overview>Configurable WyzeSense to MQTT Gateway for Home Assistant.  Refer to the WyzeSense2MQTT docs for configuration.  Sensors.yaml is also required to have at least one sensor and will not be made automatically.  Change your hidraw port to pass into the container as necessary.</Overview>
+  <Overview>Configurable WyzeSense to MQTT Gateway for Home Assistant.  Refer to the WyzeSense2MQTT docs for configuration. Change your hidraw port to pass into the container as necessary.</Overview>
   <Category>HomeAutomation: Tools:</Category>
   <WebUI/>
   <TemplateURL/>
