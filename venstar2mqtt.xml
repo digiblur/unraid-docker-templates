@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>venstar2mqtt</Name>
+  <Repository>terafin/mqtt-venstar-bridge</Repository>
+  <Registry>https://hub.docker.com/r/terafin/mqtt-venstar-bridge/</Registry>
+  <TemplateURL/>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project>https://github.com/terafin/mqtt-venstar-bridge</Project>
+  <Overview>Simple container that allows MQTT to be used to view data and push settings to the Venstar Local API Thermostats.  Local API needs to be enabled on the thermostat.  No Web UI or appdata folder necessary.</Overview>
+  <Category>HomeAutomation: Tools: Status:Stable</Category>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/venstar2mqtt.png</Icon>
+  <Description>Allows MQTT to be used to view data and push settings to the Venstar Local API Thermostats.  Local API needs to be enabled on the thermostat itself.  No Web UI or appdata folder necessary.</Description>
+  <Config Name="Venstar Host IP" Target="VENSTAR_HOST" Default="" Mode="" Description="The IP or DNS of the Venstar Thermostat" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTT Topic Prefix" Target="TOPIC_PREFIX" Default="venstar2mqtt" Mode="" Description="MQTT Topic Prefix" Type="Variable" Display="always" Required="true" Mask="false">venstar2mqtt</Config>
+  <Config Name="MQTT URL" Target="MQTT_HOST" Default="mqtt://" Mode="" Description="Full URL required (ex: mqtt://192.168.1.10) Usually the UnRaid server ethernet IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTT Username" Target="MQTT_USER" Default="" Mode="" Description="Optional MQTT User ID" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MQTT Password" Target="MQTT_PASS" Default="" Mode="" Description="Optional MQTT password" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
