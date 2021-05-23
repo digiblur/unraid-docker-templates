@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>amcrest2mqtt</Name>
+  <Repository>dchesterton/amcrest2mqtt</Repository>
+  <Registry>https://hub.docker.com/r/dchesterton/amcrest2mqtt/</Registry>
+  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/amcrest2mqtt.xml</TemplateURL>  
+  <WebUI/>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project>https://github.com/dchesterton/amcrest2mqtt</Project>
+  <Overview>Expose all events from an Amcrest device to an MQTT broker.  Supports autodiscovery via Home Assistant.  Multiple docker containers will need to be installed to support more than one Amcrest device.  No WebUI is necessary.</Overview>
+  <Category>HomeAutomation: Tools: Status:Stable</Category>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/amcrest2mqtt.png</Icon>
+  <Description>Expose all events from an Amcrest device to an MQTT broker.  Supports autodiscovery via Home Assistant.  Multiple docker containers will need to be installed to support more than one Amcrest device.  No WebUI is necessary.</Description>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <Config Name="Amcrest Device IP" Target="AMCREST_HOST" Default="" Mode="" Description="IP or DNS of Amcrest Device" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Amcrest Device Password" Target="AMCREST_PASSWORD" Default="" Mode="" Description="Amcrest Device Local Password" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTT Broker IP" Target="MQTT_HOST" Default="" Mode="" Description="MQTT Broker IP or DNS Name" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTT Username" Target="MQTT_USERNAME" Default="" Mode="" Description="MQTT Username" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MQTT Password" Target="MQTT_PASSWORD" Default="" Mode="" Description="MQTT Password" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Home Assistant Autodiscovery" Target="HOME_ASSISTANT" Default="true" Mode="" Description="Enabled HA Autodiscovery: true or false" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+</Container>
