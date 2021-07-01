@@ -25,7 +25,7 @@
 			[br]
             [br]
             To enable the dev branch, change the repository value to koenkk/zigbee2mqtt:latest-dev
-			[br]
+			[br]</Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/zigbee2mqtt.png</Icon>  
   <Config Name="appdata" Target="/app/data" Default="/mnt/user/appdata/zigbee2mqtt" Mode="rw" Description="Container Path: /app/data" Type="Path" Display="always" Required="true" Mask="false"/>
