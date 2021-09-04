@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ring-mqtt</Name>
+  <Repository>tsightler/ring-mqtt</Repository>
+  <Registry>https://hub.docker.com/r/tsightler/ring-mqtt/</Registry>
+  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/ring-mqtt.xml</TemplateURL>  
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project>https://github.com/tsightler/ring-mqtt</Project>
+  <Overview>Interact with Ring Inc products (cameras/alarms/smart lighting) via MQTT  - See the project page for token auth procedure - https://github.com/tsightler/ring-mqtt#authentication&#xD;
+</Overview>
+  <Category>HomeAutomation: Tools:</Category>
+  <Icon>https://raw.githubusercontent.com/tsightler/ring-mqtt/main/images/ring-mqtt-icon.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <Config Name="DataPath" Target="/data" Default="/mnt/user/appdata/ring-mqtt" Mode="rw" Description="Data Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ring-mqtt</Config>
+  <Config Name="RINGTOKEN" Target="RINGTOKEN" Default="" Mode="" Description="Container Variable: RINGTOKEN" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="MQTTHOST" Target="MQTTHOST" Default="" Mode="" Description="Container Variable: MQTTHOST" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="MQTTPORT" Target="MQTTPORT" Default="1883" Mode="" Description="Container Variable: MQTTPORT" Type="Variable" Display="always" Required="false" Mask="false">1883</Config>
+  <Config Name="MQTTPASSWORD" Target="MQTTPASSWORD" Default="" Mode="" Description="Container Variable: MQTTPASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="ENABLECAMERAS" Target="ENABLECAMERAS" Default="false" Mode="" Description="Container Variable: ENABLECAMERAS" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="SNAPSHOTMODE" Target="SNAPSHOTMODE" Default="disabled" Mode="" Description="Container Variable: SNAPSHOTMODE" Type="Variable" Display="always" Required="false" Mask="false">disabled</Config>
+  <Config Name="ENABLEMODES" Target="ENABLEMODES" Default="false" Mode="" Description="Container Variable: ENABLEMODES" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="ENABLEPANIC" Target="ENABLEPANIC" Default="false" Mode="" Description="Container Variable: ENABLEPANIC" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="BEAMDURATION" Target="BEAMDURATION" Default="0" Mode="" Description="Container Variable: BEAMDURATION" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="DISARMCODE" Target="DISARMCODE" Default="" Mode="" Description="Container Variable: DISARMCODE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="RINGLOCATIONIDS" Target="RINGLOCATIONIDS" Default="" Mode="" Description="Container Variable: RINGLOCATIONIDS" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
