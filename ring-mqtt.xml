@@ -17,6 +17,7 @@
   <Config Name="RINGTOKEN" Target="RINGTOKEN" Default="" Mode="" Description="Container Variable: RINGTOKEN" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MQTTHOST" Target="MQTTHOST" Default="" Mode="" Description="Container Variable: MQTTHOST" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MQTTPORT" Target="MQTTPORT" Default="1883" Mode="" Description="Container Variable: MQTTPORT" Type="Variable" Display="always" Required="false" Mask="false">1883</Config>
+  <Config Name="MQTTUSER" Target="MQTTUSER" Default="" Mode="" Description="Container Variable: MQTTUSER" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MQTTPASSWORD" Target="MQTTPASSWORD" Default="" Mode="" Description="Container Variable: MQTTPASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="ENABLECAMERAS" Target="ENABLECAMERAS" Default="false" Mode="" Description="Container Variable: ENABLECAMERAS" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="SNAPSHOTMODE" Target="SNAPSHOTMODE" Default="disabled" Mode="" Description="Container Variable: SNAPSHOTMODE" Type="Variable" Display="always" Required="false" Mask="false">disabled</Config>
