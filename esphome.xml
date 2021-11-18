@@ -47,5 +47,6 @@
   <Labels/>
   <Config Name="Config Folder" Target="/config" Default="/mnt/user/appdata/esphome" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/esphome</Config>
   <Config Name="Communication" Target="6123" Default="6123" Mode="tcp" Description="Communication Port" Type="Port" Display="advanced" Required="false" Mask="false">6123</Config>
+  <Config Name="ESPHOME_DASHBOARD_USE_PING" Target="ESPHOME_DASHBOARD_USE_PING" Default="True" Mode="" Description="Container Variable: ESPHOME_DASHBOARD_USE_PING" Type="Variable" Display="advanced" Required="false" Mask="false">True</Config>
   <Config Name="WebUI" Target="6052" Default="6052" Mode="tcp" Description="WebUI Port" Type="Port" Display="advanced" Required="true" Mask="false">6052</Config>
 </Container>
