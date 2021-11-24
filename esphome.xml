@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Shell>bash</Shell>
   <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
-  <Project>https://esphome.io/<Project/>
+  <Project>https://esphome.io/</Project>
   <Overview>The official ESPHome Container. ESPHome is the perfect solution for creating custom firmwares for your ESP8266/ESP32 boards. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.</Overview>
   <Category>HomeAutomation: Tools:</Category>
   <WebUI>http://[IP]:[PORT:6052]/</WebUI>
