@@ -3,7 +3,7 @@
   <Name>ESPHome</Name>
   <Repository>esphome/esphome</Repository>
   <Registry>https://hub.docker.com/r/esphome/esphome</Registry>
-  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/esphome.xml<TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/esphome.xml</TemplateURL>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Shell>bash</Shell>
