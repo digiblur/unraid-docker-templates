@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project/>
-  <Overview>TasmoAdmin (previously SonWEB) is an administrative Website for Home Automation Devices flashed with [Sonoff-Tasmota](https://github.com/arendst/Sonoff-Tasmota). &#xD;
+  <Overview>TasmoAdmin is an administrative Website for Home Automation Devices flashed with Tasmota (PLEASE Stop this container while not in use and during Tasmota upgrades) (https://github.com/arendst/Tasmota). &#xD;
 Video Tutorial: https://www.youtube.com/watch?v=vJUhRyi3-BQ</Overview>
   <Category>HomeAutomation: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:9541]/</WebUI>
