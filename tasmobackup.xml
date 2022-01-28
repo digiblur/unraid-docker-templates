@@ -11,7 +11,7 @@
   <Project/>
   <Overview>Tasmota backup - TasmoBackup - Backup all your tasmota devices in one place.  Add/scan for your Tasmota devices.  Use the backupall.php page to schedule automated backups of all devices!</Overview>
   <Category>HomeAutomation: Network:Management</Category>
-  <WebUI>http://[IP]:[PORT:8259]/</WebUI>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/danmed/TasmoBackupV1/master/TasmoBackup.png</Icon>
   <ExtraParams/>
