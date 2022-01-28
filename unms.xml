@@ -15,7 +15,7 @@ The container can be accessed via HTTP with port 6080 or HTTPS 6443.  &#xD;
 UNMS Setup:&#xD;
 Access the container and walk through the initial setup wizard of adding the username/passwords and devices to be monitored.</Overview>
   <Category>Network:Management Tools:</Category>
-  <WebUI>https://[IP]:[PORT:6443]</WebUI>
+  <WebUI>https://[IP]:[PORT:443]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/unms_icon.png</Icon>
   <ExtraParams/>
