@@ -9,7 +9,7 @@
   <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/plate-minder.png</Icon>  
   <Project>https://github.com/sclaflin/Plate-Minder</Project>
-  <Overview>Monitor an RTSP / MJPEG stream for license plates, record them, store them in SQL, send alerts via MQTT with AutoDiscovery into Home Assistant. REQUIRED: open-alpr-http-wrapper docker container</Overview>
+  <Overview>Monitor an RTSP / MJPEG stream for license plates, record them, store them in SQL, send alerts via MQTT with AutoDiscovery into Home Assistant. REQUIRED: open-alpr-http-wrapper docker container and configuration YAML file (example config on the Plate-Minder Github page</Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/plate-minder.xml</TemplateURL>  
   <ExtraParams>--restart unless-stopped</ExtraParams>
