@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>plate-minder</Name>
+  <Repository>sclaflin/plate-minder</Repository>
+  <Registry>https://hub.docker.com/r/sclaflin/plate-minder/</Registry>
+  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/plate-minder.xml</TemplateURL>  
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/plate-minder.png</Icon>  
+  <Project>https://github.com/sclaflin/Plate-Minder</Project>
+  <Overview>Monitor an RTSP / MJPEG stream for license plates, record them, store them in SQL, send alerts via MQTT with AutoDiscovery into Home Assistant. REQUIRED: open-alpr-http-wrapper docker container</Overview>
+  <Category>HomeAutomation: Tools: Status:Stable</Category>
+  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/plate-minder.xml</TemplateURL>  
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <Config Name="appdata" Target="/app/data" Default="/mnt/user/appdata/plateminder/data" Mode="rw" Description="Path for data/image storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/plateminder/data</Config>
+  <Config Name="config_yaml" Target="/app/config.yaml" Default="/mnt/user/appdata/plateminder/config.yaml" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/plateminder/config.yaml</Config>
+  <Config Name="restapi" Target="2576" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2576</Config>
+</Container>

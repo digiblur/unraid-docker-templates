@@ -11,7 +11,6 @@
   <Project>https://github.com/sclaflin/Plate-Minder</Project>
   <Overview>A very thin HTTP wrapper around the OpenALPR cli binary - Used for the plate-minder docker container</Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
-  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <WebUI>http://[IP]:[PORT:3001]/</WebUI>
   <Description>A very thin HTTP wrapper around the OpenALPR cli binary - Used for the plate-minder docker container</Description>
