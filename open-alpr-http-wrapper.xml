@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>open-alpr-http-wrapper</Name>
+  <Repository>sclaflin/open-alpr-http-wrapper</Repository>
+  <Registry>https://hub.docker.com/r/sclaflin/open-alpr-http-wrapper/</Registry>
+  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/open-alpr-http-wrapper.xml</TemplateURL>  
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/open-alpr-http-wrapper.png</Icon>  
+  <Project>https://github.com/sclaflin/Plate-Minder</Project>
+  <Overview>A very thin HTTP wrapper around the OpenALPR cli binary - Used for the plate-minder docker container</Overview>
+  <Category>HomeAutomation: Tools: Status:Stable</Category>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <WebUI>http://[IP]:[PORT:3001]/</WebUI>
+  <Description>A very thin HTTP wrapper around the OpenALPR cli binary - Used for the plate-minder docker container</Description>
+  <Config Name="httpPort" Target="3000" Default="3001" Mode="tcp" Description="Plate-Minder usage and manualy test GUI" Type="Port" Display="always" Required="true" Mask="false">3001</Config>
+</Container>
