@@ -12,7 +12,7 @@
   <Overview>A very thin HTTP wrapper around the OpenALPR cli binary - Used for the plate-minder docker container</Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <ExtraParams>--restart unless-stopped</ExtraParams>
-  <WebUI>http://[IP]:[PORT:3001]/</WebUI>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <Description>A very thin HTTP wrapper around the OpenALPR cli binary - Used for the plate-minder docker container</Description>
   <Config Name="httpPort" Target="3000" Default="3001" Mode="tcp" Description="Plate-Minder usage and manualy test GUI" Type="Port" Display="always" Required="true" Mask="false">3001</Config>
 </Container>
