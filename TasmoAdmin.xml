@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>TasmoAdmin</Name>
-  <Repository>raymondmm/tasmoadmin</Repository>
-  <Registry>https://hub.docker.com/r/raymondmm/tasmoadmin/</Registry>
+  <Repository>ghcr.io/tasmoadmin/tasmoadmin:latest</Repository>
+  <Registry>https://github.com/TasmoAdmin/TasmoAdmin/pkgs/container/tasmoadmin</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
