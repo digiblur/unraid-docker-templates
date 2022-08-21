@@ -11,7 +11,7 @@
   <Overview>TasmoAdmin is an administrative Website for Home Automation Devices flashed with Tasmota (PLEASE Stop this container while not in use and during Tasmota upgrades) (https://github.com/arendst/Tasmota). &#xD;
 Video Tutorial: https://www.youtube.com/watch?v=vJUhRyi3-BQ</Overview>
   <Category>HomeAutomation: Network:Management</Category>
-  <WebUI>http://[IP]:[PORT:9541]/</WebUI>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/tasmoadmin_icon.png</Icon>
   <ExtraParams/>
