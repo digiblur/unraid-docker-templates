@@ -4,7 +4,7 @@
   <Repository>zwavejs/zwave-js-ui</Repository>
   <Registry>https://hub.docker.com/r/zwavejs/zwave-js-ui</Registry>
   <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/zwave-js-ui.xml</TemplateURL>  
-  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8091]/</WebUI>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
@@ -18,7 +18,7 @@ Example: /dev/serial/by-id/usb-Silicon_Labs_Zooz_ZST10_700_Z-Wave_Stick_a2b44f42
   </Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/zwave-js-ui.png</Icon>
-  <Config Name="WebUI" Target="8091" Default="8091" Mode="tcp" Description="Container WebUI: 8091" Type="Port" Display="always" Required="true" Mask="false">8091</Config>
+  <Config Name="WebUI" Target="8091" Default="8091" Mode="tcp" Description="Container WebUI" Type="Port" Display="always" Required="true" Mask="false">8091</Config>
   <Config Name="USB Zwave device" Target="" Default="/dev/ttyACM0:/dev/zwave" Mode="" Description="" Type="Device" Display="always" Required="false" Mask="false">/dev/ttyACM0:/dev/zwave</Config>
   <Config Name="Websocket Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Config folder" Target="/usr/src/app/store" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/zwave-js-ui</Config>
