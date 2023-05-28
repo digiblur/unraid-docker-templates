@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ESPHome-LibreTiny</Name>
+  <Repository>ghcr.io/libretiny-eu/libretiny-esphome-docker:latest</Repository>
+  <Registry>https://github.com/orgs/libretiny-eu/packages/container/package/libretiny-esphome-docker</Registry>
+  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/esphome-libretiny.xml</TemplateURL>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Shell>bash</Shell>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project>https://docs.libretiny.eu/</Project>
+  <Overview>The official LibreTiny Fork of ESPHome. What is the difference of the fork?  This enables the use of the BK7231 and RTL8710B chips with ESPHome.  No more manually building the container!  Video of CloudCutter and LibreTiny/Tuya - https://youtu.be/i9HokGpj-kE </Overview>
+  <Category>HomeAutomation: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:6053]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/esphome-libretiny.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <Config Name="Config Folder" Target="/config" Default="/mnt/user/appdata/esphome-lt" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Communication" Target="6123" Default="6124" Mode="tcp" Description="Communication Port" Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="WebUI" Target="6052" Default="6053" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Dashboard Use Ping" Target="ESPHOME_DASHBOARD_USE_PING" Default="false" Mode="" Description="Set this to true if the devices are showing offline" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
