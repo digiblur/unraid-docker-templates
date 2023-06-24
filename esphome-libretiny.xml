@@ -11,7 +11,7 @@
   <Project>https://docs.libretiny.eu/</Project>
   <Overview>The official LibreTiny Fork of ESPHome. What is the difference of the fork?  This enables the use of the BK7231 and RTL8710B chips with ESPHome.  No more manually building the container!  Video of CloudCutter and LibreTiny/Tuya - https://youtu.be/i9HokGpj-kE </Overview>
   <Category>HomeAutomation: Tools:</Category>
-  <WebUI>http://[IP]:[PORT:6053]/</WebUI>
+  <WebUI>http://[IP]:[PORT:6052]/</WebUI>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/esphome-libretiny.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <Config Name="Config Folder" Target="/config" Default="/mnt/user/appdata/esphome-lt" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"/>
