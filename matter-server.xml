@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>matter-server</Name>
+  <Repository>ghcr.io/home-assistant-libs/python-matter-server:stable</Repository>
+  <Registry>https://github.com/home-assistant-libs/python-matter-server</Registry>
+  <Network>host</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.digiblur.com/</Support>
+  <Project>https://github.com/home-assistant-libs/python-matter-server</Project>
+  <Overview>Official Matter Server docker container from Home Assistant. This project implements a Matter Controller Server over WebSockets using the official Matter (formerly CHIP) SDK as a base and provides both a server and client implementation.  The goal of this project is primary to have Matter support in Home Assistant but its universal approach makes it suitable to be used in other projects too.&#xD;
+&#xD;
+There is NO WEB-UI to this container.  Check the container logs for any errors when necessary.&#xD;
+&#xD;
+REQUIREMENTS:&#xD;
+Unraid needs to have IPV4+6 enabled on the network interface!  Make sure your you run the container on the host network. The host network interface needs to be in the same network as the Android/iPhone device you are using for commissioning. Matter uses link-local multicast protocols which do not work accross different LANs or VLANs.</Overview>
+  <Category>HomeAutomation: Tools:</Category>
+  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/matter-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/matter-icon.png</Icon>
+  <ExtraParams>--security-opt apparmor:unconfined --restart unless-stopped</ExtraParams>
+  <DonateText>Help support my work by buying me a drank</DonateText>
+  <DonateLink>paypal.me/digiblurDIY</DonateLink>
+  <Config Name="MatterData" Target="/data/" Default="/mnt/user/appdata/python-matter-server/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/run/dbus" Target="/run/dbus" Default="/run/dbus" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
