@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>neolink</Name>
   <Repository>thirtythreeforty/neolink</Repository>
-  <Registry>https://hub.docker.com/r/thirtythreeforty/neolink/</Registry>
+  <Registry>https://hub.docker.com/r/quantumentangledandy/neolink/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
