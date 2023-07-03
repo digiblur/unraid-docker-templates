@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>neolink</Name>
-  <Repository>thirtythreeforty/neolink</Repository>
-  <Registry>https://hub.docker.com/r/thirtythreeforty/neolink/</Registry>
+  <Repository>QuantumEntangledAndy/neolink</Repository>
+  <Registry>https://hub.docker.com/r/QuantumEntangledAndy/neolink/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/thirtythreeforty/neolink</Support>
+  <Support>https://github.com/QuantumEntangledAndy/neolink</Support>
   <Project/>
   <Overview>Neolink is a small program that acts as a proxy between Reolink IP cameras and normal RTSP clients. Certain cameras, such as the Reolink B800, do not implement ONVIF or RTSP, but instead use a proprietary "Baichuan" protocol only compatible with their apps and NVRs (any camera that uses "port 9000" will likely be using this protocol).&#xD;
 &#xD;
-NOTE: See the GitHub Repo for examples for setting up your appdata/neolink/config.toml file for each camera.  https://github.com/thirtythreeforty/neolink&#xD;
+NOTE: See the GitHub Repo for examples for setting up your appdata/neolink/config.toml file for each camera.  https://github.com/QuantumEntangledAndy/neolink&#xD;
 &#xD;
 Neolink allows you to use NVR software such as Shinobi or Blue Iris to receive video from these cameras instead. The Reolink NVR is not required, and the cameras are unmodified. Your NVR software connects to Neolink, which forwards the video stream from the camera.&#xD;
 &#xD;
@@ -28,7 +28,7 @@ The Neolink project is not affiliated with Reolink in any way; everything it doe
   <DonateLink/>
   <Description>Neolink is a small program that acts as a proxy between Reolink IP cameras and normal RTSP clients. Certain cameras, such as the Reolink B800, do not implement ONVIF or RTSP, but instead use a proprietary "Baichuan" protocol only compatible with their apps and NVRs (any camera that uses "port 9000" will likely be using this protocol).&#xD;
 &#xD;
-NOTE: See the GitHub Repo for examples for setting up your appdata/neolink/config.toml file for each camera.  https://github.com/thirtythreeforty/neolink&#xD;
+NOTE: See the GitHub Repo for examples for setting up your appdata/neolink/config.toml file for each camera.  https://github.com/QuantumEntangledAndy/neolink&#xD;
 &#xD;
 Neolink allows you to use NVR software such as Shinobi or Blue Iris to receive video from these cameras instead. The Reolink NVR is not required, and the cameras are unmodified. Your NVR software connects to Neolink, which forwards the video stream from the camera.&#xD;
 &#xD;
