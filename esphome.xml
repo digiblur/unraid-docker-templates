@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>ESPHome</Name>
-  <Repository>esphome/esphome</Repository>
-  <Registry>https://hub.docker.com/r/esphome/esphome</Registry>
+  <Repository>ghcr.io/esphome/esphome:stable</Repository>
+  <Registry>https://github.com/esphome/esphome/pkgs/container/esphome</Registry>
   <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/esphome.xml</TemplateURL>
-  <Network>bridge</Network>
+  <Network>host</Network>
   <Privileged>false</Privileged>
   <Shell>bash</Shell>
   <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project>https://esphome.io/</Project>
-  <Overview>The official ESPHome Container. ESPHome is the perfect solution for creating custom firmwares for your ESP8266/ESP32 boards. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.</Overview>
+  <Overview>The official ESPHome Container. ESPHome is the perfect solution for creating custom firmwares for your ESP8266/ESP32 boards. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.  Devices showing all offline?  Add an environment variable of ESPHOME_DASHBOARD_USE_PING with the value of true if mDNS is not working on your network.</Overview>
   <Category>HomeAutomation: Tools:</Category>
   <WebUI>http://[IP]:[PORT:6052]/</WebUI>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/esphome.png</Icon>
@@ -17,5 +17,4 @@
   <Config Name="Config Folder" Target="/config" Default="/mnt/user/appdata/esphome" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Communication" Target="6123" Default="6123" Mode="tcp" Description="Communication Port" Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="WebUI" Target="6052" Default="6052" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false"/>
-  <Config Name="Dashboard Use Ping" Target="ESPHOME_DASHBOARD_USE_PING" Default="false" Mode="" Description="Set this to true if the devices are showing offline" Type="Variable" Display="always" Required="true" Mask="false"/>
 </Container>
