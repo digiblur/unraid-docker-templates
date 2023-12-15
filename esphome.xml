@@ -18,7 +18,7 @@
   <Config Name="Communication" Target="6123" Default="6123" Mode="tcp" Description="Communication Port" Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="WebUI" Target="6052" Default="6052" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="ESPHOME_DASHBOARD_USE_PING" Target="ESPHOME_DASHBOARD_USE_PING" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="ESPHOME_DATA_DIR" Target="ESPHOME_DATA_DIR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/data</Config>
+  <Config Name="ESPHOME_DATA_DIR" Target="ESPHOME_DATA_DIR" Default="/data" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/data</Config>
   <Config Name="Data Folder" Target="/data" Default="/mnt/user/appdata/esphome-data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/esphome-data</Config>
   <Config Name="Cache Folder" Target="/cache" Default="/dev/shm/esphome-cache" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/dev/shm/esphome-cache</Config>
 </Container>
