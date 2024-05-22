@@ -9,19 +9,19 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project>https://github.com/koenkk/zigbee2mqtt</Project>
-  <Overview>Zigbee to MQTT bridge allows you to use your Zigbee devices without the vendors bridge or gateway. This template has the port 8080 forwarded for the front end to 9442 and does NOT require a USB passthrough to accomodate IP based bridges.
-            [br][br]
-			All users MUST edit the configuration.yaml file in the appdata zigbee2mqtt folder to specify the serial port (or tcp port) for the zigbee adapter.
-			[br][br]
-			Attempt to start the container at least once and the yaml will be created for you. If you are using a USB Zigbee adapter, add the device passthrough below on the container configuration.
-            [br][br]
-			How to determine the Zigbee adapter USB ID: https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html#1-determine-location-of-the-adapter-and-checking-user-permissions
-            [br][br]
-            [br]
-            To enable the dev branch, change the repository value to koenkk/zigbee2mqtt:latest-dev
-			[br]</Overview>
+  <Overview>Zigbee to MQTT bridge allows you to use your Zigbee devices without the vendors bridge or gateway. This template has the port 9442 forwarded for the front end on 8080 and does NOT require a USB passthrough to accomodate POE based adapters.&#xD;
+&#xD;
+* All users MUST edit the configuration.yaml file in the appdata zigbee2mqtt folder to specify the serial port (or tcp port) for the zigbee adapter.  If you are using a USB adapter add it via dev serial ID and point it to /dev/zigbee for ease of use.  Example value: /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0:/dev/zigbee		&#xD;
+&#xD;
+* Attempt to start the container at least once and the yaml will be created for you. Then modify it to include the MQTT host info and the USB or TCP port for the Zigbee adapter.&#xD;
+            &#xD;
+*  How to determine the Zigbee adapter USB ID: https://www.zigbee2mqtt.io/guide/installation/01_linux.html#determine-location-of-the-adapter-and-checking-user-permissions&#xD;
+&#xD;
+* To enable the dev branch, change the repository value to koenkk/zigbee2mqtt:latest-dev&#xD;
+			&#xD;
+</Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/zigbee2mqtt.png</Icon>  
   <Config Name="appdata" Target="/app/data" Default="/mnt/user/appdata/zigbee2mqtt" Mode="rw" Description="Container Path: /app/data" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="WebUI" Target="9442" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="WebUI" Target="8080" Default="9442" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false"/>
 </Container>
