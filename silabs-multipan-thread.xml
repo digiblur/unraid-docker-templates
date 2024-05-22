@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>silabs-multipan-thread</Name>
+  <Repository>b2un0/silabs-multipan-docker</Repository>
+  <Registry>https://hub.docker.com/r/b2un0/silabs-multipan-docker/</Registry>
+  <Network>host</Network>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project>https://github.com/b2un0/silabs-multipan-docker</Project>
+  <Overview>Standalone version of the Silicon Labs multiprotocol addon for Home Assistant.  The cool kids that run it all in docker containers!&#xD;
+&#xD;
+An EFR based chipset Thread stick is required for this container to start.  It needs to be passed in as the same value you provide such as the default of /dev/thread using a line such as  /dev/serial/by-id/usb-Nabu_Casa_SkyConnect_v1.0_76f624b636edec1191324740ad51a8b2-if00-port0:/dev/thread  </Overview>
+  <Category>HomeAutomation: Network:Other Status:Stable</Category>
+  <DonateText>Help support my work - buy me a drank</DonateText>
+  <DonateLink>paypal.me/digiblurDIY</DonateLink>  
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/silabs_logo.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <Config Name="Data Path" Target="/data" Default="/mnt/user/appdata/silabs-multipan" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/silabs-multipan</Config>
+  <Config Name="Device Path" Target="DEVICE" Default="/dev/ttyUSB0" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">/dev/thread</Config>
+  <Config Name="Device Baud" Target="BAUDRATE" Default="460800" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">460800</Config>
+  <Config Name="Backbone Ethernet" Target="BACKBONE_IF" Default="eth0" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">eth0</Config>
+  <Config Name="OTBR Listen Port" Target="OTBR_REST_LISTEN_PORT" Default="8081" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">8081</Config>
+  <Config Name="OTBR Web Port" Target="OTBR_WEB_PORT" Default="8086" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">8087</Config>
+  <Config Name="EZSP Listen" Target="EZSP_LISTEN_PORT" Default="20108" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">20108</Config>
+  <Config Name="Dongle Passthrough" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="true" Mask="false">/dev/serial/by-id/usb-Nabu_Casa_SkyConnect_v1.0_76f624b636edec1191324740ad51a8b2-if00-port0:/dev/thread</Config>
+</Container>
