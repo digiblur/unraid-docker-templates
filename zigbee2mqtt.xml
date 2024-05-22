@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
   <Project>https://github.com/koenkk/zigbee2mqtt</Project>
-  <Overview>Zigbee to MQTT bridge allows you to use your Zigbee devices without the vendors bridge or gateway. This template has the port 9442 forwarded for the front end and does not require a USB passthrough to accomodate IP based bridges.
+  <Overview>Zigbee to MQTT bridge allows you to use your Zigbee devices without the vendors bridge or gateway. This template has the port 8080 forwarded for the front end to 9442 and does NOT require a USB passthrough to accomodate IP based bridges.
             [br][br]
 			All users MUST edit the configuration.yaml file in the appdata zigbee2mqtt folder to specify the serial port (or tcp port) for the zigbee adapter.
 			[br][br]
@@ -17,17 +17,11 @@
             [br][br]
 			How to determine the Zigbee adapter USB ID: https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html#1-determine-location-of-the-adapter-and-checking-user-permissions
             [br][br]
-			To enable the frontend GUI, edit the configuration.yaml in the appdata zigbee2mqtt folder and add the following:
-			[br]
-			frontend:
-			[br]
-            port: 9442
-			[br]
             [br]
             To enable the dev branch, change the repository value to koenkk/zigbee2mqtt:latest-dev
 			[br]</Overview>
   <Category>HomeAutomation: Tools: Status:Stable</Category>
   <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/zigbee2mqtt.png</Icon>  
   <Config Name="appdata" Target="/app/data" Default="/mnt/user/appdata/zigbee2mqtt" Mode="rw" Description="Container Path: /app/data" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="WebUI" Target="9442" Default="9442" Mode="tcp" Description="Container Port: 9442" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="WebUI" Target="9442" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false"/>
 </Container>
