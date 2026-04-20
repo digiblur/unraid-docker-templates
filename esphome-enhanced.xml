@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ESPHome-Enhanced</Name>
+  <Repository>heffneil/esphome-enhanced-dashboard</Repository>
+  <Registry>https://github.com/heffneil/esphome-enhanced-dashboard</Registry>
+  <TemplateURL>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/esphome-enhanced.xml</TemplateURL>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Shell>bash</Shell>
+  <Support>https://forums.unraid.net/topic/72033-support-digiblurs-docker-template-repository/</Support>
+  <Project>https://github.com/heffneil/esphome-enhanced-dashboard</Project>
+  <Overview>The heffneil Enhanced ESPHome Dashboard Container. ESPHome is the perfect solution for creating custom firmwares for your ESP8266/ESP32/RPI/Beken boards. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.  &#xD;
+&#xD;
+Devices showing all offline?  Change the environment variable of ESPHOME_DASHBOARD_USE_PING to true if mDNS is not working on your network.&#xD;
+&#xD;
+To increase compiling performance by kind of a lot, the default has /cache mapped to RAM, you can delete this path if you do not have much RAM to spare on your machine.</Overview>
+  <Category>HomeAutomation: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:6052]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/digiblur/unraid-docker-templates/master/images/esphome.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <Config Name="Config Folder" Target="/config" Default="/mnt/user/appdata/esphome-enhanced" Mode="rw" Description="Container Path: /config - Where your yaml files will be stored" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data Folder" Target="/data" Default="/mnt/user/appdata/esphome-enhanced-data" Mode="rw" Description="Container Path: /data - Where your compiled binaries will be stored" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Cache Folder" Target="/cache" Default="/dev/shm/esphome-enh-cache" Mode="rw" Description="Container Path: /cache - Where the files used to compile builds are stored, ram drive preferred to reduce IO bottlenecks" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="WebUI" Target="6052" Default="6052" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="ESPHOME_DASHBOARD_USE_PING" Target="ESPHOME_DASHBOARD_USE_PING" Default="false" Mode="" Description="Use ping instead of mdns for monitoring device status" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="ESPHOME_DATA_DIR" Target="ESPHOME_DATA_DIR" Default="/data" Mode="" Description="Environment variable for separated data from configs, you shouldn't need to change this" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
